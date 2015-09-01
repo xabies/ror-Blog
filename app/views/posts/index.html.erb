@@ -1,0 +1,26 @@
+<div id="entradas">
+    <h1>Listado de Post</h1>
+	<br>
+	<br>
+    <table cellspacing="20px">
+        <% @posts.each do |post| %>
+        <tr>
+            <td>
+                <%=h post.title %>
+            </td>
+            <td>
+                <%= link_to 'Ver', post %>
+            </td>
+            <td>
+                <%= link_to 'Editar', edit_post_path(post) %>
+            </td>
+            <td>
+                <%= link_to 'Eliminar', post, :confirm => '¿Estás seguro?', :method => :delete %>
+            </td>
+        </tr>
+        <% end %>
+    </table>
+    <br/>
+	<br>
+    <%= link_to 'Añadir Nuevo Post', new_post_path %>
+</div>

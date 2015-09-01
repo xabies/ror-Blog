@@ -1,0 +1,40 @@
+<div id="entradas">
+    <div id="postTitulo">
+        <%= link_to @post.title %>
+    </div>
+    <div id="postImagen">
+        <%=image_tag @post.imagen %>
+    </div>
+    <div id="postBody">
+        <%= @post.body %>
+    </div>
+    <div id="postComentarios">
+        <% @post.comments.each do |c| %>
+        <h3><b><%=h c.name %>:</b></h3>
+        <p>
+            <%=h c.body %>
+        </p>
+        <br>
+        <% end %>
+        <br>
+        <br>
+        <h2>Escribe tu opinión: </h2>
+        <br>
+        <% form_for [@post, Comment.new] do |f| %>
+        <p>
+            <%= f.label :name, "Autor" %>
+            <br/>
+            <%= f.text_field :name %>
+            <br/>
+            <br/>
+            <%= f.label :body, "Comentario" %>
+            <br/>
+            <%= f.text_area :body %>
+        </p>
+        <br/>
+        <p>
+            <%= f.submit "Añadir comentario" %>
+        </p>
+        <% end %>
+    </div>
+</div>

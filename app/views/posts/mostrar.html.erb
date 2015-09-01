@@ -1,0 +1,18 @@
+<% @posts.each do |post| %>
+<div id="entradas">
+    <div id="postTitulo">
+        <%= link_to post.title, post %>
+    </div>
+    <div id="postImagen">
+        <%=image_tag post.imagen %>
+    </div>
+    <div id="postBody">
+        <%= post.body %>
+    </div>
+    <div id="postMas">
+        <%= link_to 'Leer más...', post %>
+    </div>
+</div>
+<br>
+<br>
+<% end %>

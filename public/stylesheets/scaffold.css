@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #00305f;
+    color: #333;
+}
+
+body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.fieldWithErrors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#errorExplanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#errorExplanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#errorExplanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+#principal {
+    background-color: #ffffff;
+}
+
+#cabecera {
+    width: 90%;
+    height: 310px;
+    margin-left: 5%;
+    padding-top: 20px;
+    background-image: url('/images/cabecera.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#entradas {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#postTitulo a {
+    color: #333333;
+    font-size: 40px;
+    font-style: italic;
+}
+
+#postImagen {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#postBody {
+    margin-bottom: 40px;
+    text-align: justify;
+    text-indent: 3.5em;
+}
+
+#postMas a {
+    color: #cf4da5;
+    font-size: 20px;
+    float: right;
+}
+
+#postComentarios h3{
+	color: #00305f;
+	font-size: 15px;
+	font-style: italic;
+}
+
+#postComentarios h2{
+	color: #cf4da5;
+	font-size: 30px;
+}
+
+#postComentarios textArea{
+	width: 100%;
+}
+
+#comment_submit{
+	float: right;
+}
+
+#pie {
+    background-color: #cf4da5;
+    height: 60px;
+}
+
+#contenidopie {
+    color: #fff;
+    float: right;
+    margin-right: 10%;
+    padding-top: 25px;
+}
+
+
